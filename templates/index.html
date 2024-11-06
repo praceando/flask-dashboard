@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Eventos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Título do Dashboard -->
+        <div class="title-image">
+            <img src="{{ url_for('static', filename='logopraceando.png') }}" alt="Título do Dashboard">
+        </div>
+
+        <!-- Big Numbers Section -->
+        <div class="big-numbers">
+            <div class="big-number">
+                <h3>Total de Eventos</h3>
+                <p>{{ total_eventos }}</p>
+            </div>
+            <div class="big-number">
+                <h3>Total de Interesse</h3>
+                <p>{{ total_interesse }}</p>
+            </div>
+            <div class="big-number">
+                <h3>Total de Compras</h3>
+                <p>{{ total_compras }}</p>
+            </div>
+            <div class="big-number">
+                <h3>Média de Notas</h3>
+                <p>{{ media_nota_total }}</p>
+            </div>
+        </div>
+
+        <!-- Gráficos SQL em Duas Colunas -->
+        <div class="charts sql-charts">
+            <div class="chart-container">
+                <h2>Top 5 Eventos com Maior Número de Avaliações</h2>
+                <!-- <p class="chart-description">Eventos com o maior número de avaliações.</p> -->
+                <img src="data:image/png;base64,{{ eventos_populares_img }}" alt="Top 5 Eventos Populares">
+            </div>
+            <div class="chart-container">
+                <h2>Distribuição de Faixa Etária dos Consumidores</h2>
+                <!-- <p class="chart-description">Distribuição dos consumidores por faixa etária.</p> -->
+                <img src="data:image/png;base64,{{ faixa_etaria_img }}" alt="Distribuição de Faixa Etária">
+            </div>
+            <div class="chart-container">
+                <h2>Distribuição de Gênero dos Consumidores</h2>
+                <!-- <p class="chart-description">Distribuição de gênero dos consumidores.</p> -->
+                <img src="data:image/png;base64,{{ genero_img }}" alt="Distribuição de Gênero">
+            </div>
+            <div class="chart-container">
+                <h2>Eventos por Tag</h2>
+                <!-- <p class="chart-description">Total de eventos organizados por categoria.</p> -->
+                <img src="data:image/png;base64,{{ categoria_img }}" alt="Eventos por Categoria">
+            </div>
+        </div>
+
+        <!-- Gráfico MongoDB que ocupa toda a largura -->
+        <div class="charts mongo-charts">
+            <div class="chart-container full-width-chart">
+                <h2>Média de Notas por Evento</h2>
+                <!-- <p class="chart-description">Média de notas atribuídas a cada evento.</p> -->
+                <img src="data:image/png;base64,{{ media_notas_evento_img }}" alt="Média de Notas por Evento">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -38,5 +38,4 @@
 <!-- Se houver, link da issue associada ao PR. -->
 
 ## 💬 Comentários
-
 <!-- Qualquer outro comentário ou nota que queira deixar para quem for revisar. -->
