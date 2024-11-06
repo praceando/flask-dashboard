@@ -1,0 +1,7 @@
+Flask    
+pandas
+matplotlib
+seaborn
+psycopg2-binary 
+pymongo 
+python-dotenv
