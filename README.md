@@ -57,7 +57,7 @@ No navegador, vá para `http://ec2-52-204-64-214.compute-1.amazonaws.com:5001/da
 
 ## Exemplo de Dashboard
 <div align="center">
-<img src="https://github.com/praceando/flask-dashboard/blob/dev/exemplo_dashboard.jpg" width="300">
+<img src="https://github.com/praceando/flask-dashboard/blob/main/exemplo_dashboard.jpg" width="300">
 </div>
 
 ---
