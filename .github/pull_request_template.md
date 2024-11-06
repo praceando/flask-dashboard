@@ -1,47 +1,36 @@
-Aqui está o template ajustado para o seu projeto de dashboard com Flask:
-
----
-
 ## ✨ O que foi feito?
 
-Desenvolvida uma API em Flask que, ao receber o ID do usuário, gera um dashboard estilo BI em HTML. O dashboard exibe dados agregados e gráficos baseados nas interações e eventos do usuário.
+<!-- Descreva de maneira breve e direta o que foi alterado/implementado no PR. -->
 
-- [X] 📝 Criação/Atualização de funcionalidade
+- [ ] 📝 Criação/Atualização de funcionalidade
 - [ ] 🐛 Correção de bug
 - [ ] 🛠 Refatoração de código
 
 ## 📝 Descrição detalhada
 
-- Criação de endpoints para receber o ID do usuário e gerar o relatório correspondente.
-- Implementação de visualizações de dados (gráficos e métricas) no HTML, utilizando os dados processados.
-- Adição de gráficos que representam:
-  - Top 5 eventos com maior número de avaliações
-  - Distribuição de faixa etária e gênero dos consumidores
-  - Eventos por categoria
-  - Média de notas por evento
+<!-- Adicione mais detalhes sobre as mudanças feitas, como o motivo da implementação, o contexto ou qualquer outra informação relevante. -->
 
 ## 🔍 Como testar?
 
+<!-- Explique como testar as alterações localmente ou em ambiente de desenvolvimento, incluindo qualquer pré-requisito. -->
+
 - Passos para testar:
-  1. Clone o repositório e navegue até a branch `main`
-  2. Instale as dependências com `pip install -r requirements.txt`
-  3. Execute `python app.py`
-  4. Abra o navegador e acesse `http://ec2-52-204-64-214.compute-1.amazonaws.com:5001/dashboard/<user_id>`, substituindo `<user_id>` pelo ID do usuário que deseja visualizar.
+  1. Clone o branch nome-do-branch.
+  2. Rode a aplicação.
+  3. Verifique se [função XYZ] está funcionando conforme esperado.
 
 ## ⚠ Informações adicionais
 
-Nenhuma informação adicional.
+<!-- Caso tenha alguma informação importante para passar ao revisor (como problemas conhecidos, limitações, etc.), adicione aqui. -->
 
 ## 📸 Screenshot (opcional)
-<div align="center">
-<img src="https://github.com/praceando/flask-dashboard/blob/main/exemplo_dashboard.jpg" width="300">
-</div>
 
+<!-- Se aplicável, adicione uma imagem ou gif mostrando o funcionamento ou layout atualizado. -->
 
 ## ✅ Checklist
 
-- [X] Testes foram criados/adaptados.
-- [X] O código está de acordo com o guia de estilo do projeto.
+- [ ] Testes foram criados/adaptados.
+- [ ] O código está de acordo com o guia de estilo do projeto.
 - [ ] A documentação foi atualizada, se necessário.
 
 ## 🎯 Issue relacionada
@@ -49,5 +38,4 @@ Nenhuma informação adicional.
 <!-- Se houver, link da issue associada ao PR. -->
 
 ## 💬 Comentários
-
-Verificar se as visualizações e as métricas estão de acordo com os dados retornados pela API para garantir a precisão do dashboard.
+<!-- Qualquer outro comentário ou nota que queira deixar para quem for revisar. -->
