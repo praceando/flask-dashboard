@@ -24,6 +24,6 @@ jobs:
     - name: Deploy no EC2 -AWS
       run: |
             echo "Conectando no EC2"
-            echo "${{secrets.AWS_CHAVE}}" > private_key && chmod 600 private_key
+            echo "${{secrets.AWS_KEY}}" > private_key && chmod 600 private_key
             ssh -o StrictHostKeyChecking=no -i private_key "${{secrets.AWS_HOST}}" "
                    cd flask-dashboard/;git pull;bash executar.sh"
