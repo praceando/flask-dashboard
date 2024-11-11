@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erro - Dashboard de Eventos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .error-message {
+            background-color: #FAF9F6;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .error-message p {
+            margin-bottom: 10px;
+        }
+
+        .error-message p:first-of-type {
+            color: #344E41;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .error-message p:last-of-type {
+            color: #333;
+        }
+
+        .error-button {
+            background-color: #D6EFC7;
+            color: #1A4336;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .error-button:hover {
+            background-color: #C2E1B8;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="title-image">
+            <img src="{{ url_for('static', filename='logopraceando.png') }}" alt="Erro - Dashboard">
+        </div>
+        <div class="error-message">
+            <p><strong>Ops! Algo deu errado.</strong></p>
+            <p>Ocorreu um problema ao carregar a página. Por favor, tente novamente mais tarde.</p>
+            <button class="error-button" onclick="window.location.reload()">Tentar Novamente</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -8,6 +8,9 @@ import psycopg2
 import pymongo as mongo
 from dotenv import load_dotenv
 import os
+import matplotlib
+matplotlib.use('Agg')  # Use o backend 'Agg' para renderização sem interface gráfica
+
 
 app = Flask(__name__)
 
@@ -375,8 +378,14 @@ def index_page(user_id:int):
         eventos_populares_img=eventos_populares_img,
         media_notas_evento_img=media_notas_evento_img
     )
+    
+@app.errorhandler(404)
+@app.errorhandler(500)
+@app.errorhandler(400)
+def handle_error(error):  # adiciona o parâmetro `error`
+    return render_template("error.html"), error.code
 
-if __name__ == '__main__':
-    app.run(debug=False,port=5001, host='0.0.0.0')
+
+app.run(debug=False,port=5001, host='0.0.0.0')
 
 
