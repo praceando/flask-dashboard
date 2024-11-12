@@ -1,7 +1,7 @@
 name: Pipeline API Flask para Dashboards
 
 on:
-  pull_request:
+  push:
     branches: [ "expoTech" ]  
 
 
